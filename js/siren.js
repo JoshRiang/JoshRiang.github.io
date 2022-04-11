@@ -1,8 +1,8 @@
-var Wail = new Audio('https://github.com/JoshRiang/JoshRiang.github.io/raw/main/audio/SIREN_1.mp3');
-var Yelp = new Audio('https://github.com/JoshRiang/JoshRiang.github.io/raw/main/audio/SIREN_2.mp3');
-var Phaser = new Audio('https://github.com/JoshRiang/JoshRiang.github.io/raw/main/audio/POLICE_WARNING.mp3');
-var Horn = new Audio('https://github.com/JoshRiang/JoshRiang.github.io/raw/main/audio/AIRHORN_EQD.mp3');
-var HighLow = new Audio('https://github.com/JoshRiang/JoshRiang.github.io/raw/main/audio/AMBULANCE_WARNING.mp3');
+var Wail = new Audio('https://github.com/JoshRiang/siren.github.io/raw/main/audio/SIREN_1.mp3');
+var Yelp = new Audio('https://github.com/JoshRiang/siren.github.io/raw/main/audio/SIREN_2.mp3');
+var Phaser = new Audio('https://github.com/JoshRiang/siren.github.io/raw/main/audio/POLICE_WARNING.mp3');
+var Horn = new Audio('https://github.com/JoshRiang/siren.github.io/raw/main/audio/AIRHORN_EQD.mp3');
+var HighLow = new Audio('https://github.com/JoshRiang/siren.github.io/raw/main/audio/AMBULANCE_WARNING.mp3');
 
 function stopAudio(audio) {
     audio.pause();
