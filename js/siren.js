@@ -28,9 +28,9 @@ var WailTekan = false
 function HoldWail() {
     if (toggle == false) {
         Wail.play();
-        Wail.addEventListener('ended', function() {
+        Wail.onended = () => {
             Wail.play();
-        }, false);  
+        }
     }
 }
 
@@ -43,9 +43,9 @@ function ToggleWail() {
         WailTekan = true;
         Wail.currentTime = 0;
         Wail.play();
-        Wail.addEventListener('ended', function() {
-            Wail.play
-        }, false);  
+        Wail.onended = () => {
+            Wail.play();
+        }
     } else if (WailTekan == true) {
         WailTekan = false;
         stopAudio(Wail);
@@ -62,9 +62,9 @@ var YelpTekan = false
 function HoldYelp() {
     if (toggle == false) {
         Yelp.play();
-        Yelp.addEventListener('ended', function() {
+        Yelp.onended = () => {
             Yelp.play();
-        }, false);  
+        } 
     }
 }
 
@@ -76,9 +76,9 @@ function ToggleYelp() {
         PhaserTekan = false;
         YelpTekan = true
         Yelp.play();
-        Yelp.addEventListener('ended', function() {
+        Yelp.onended = () => {
             Yelp.play();
-        }, false);  
+        } 
     } else if (YelpTekan == true){
         YelpTekan = false;
         stopAudio(Yelp);
@@ -94,9 +94,9 @@ var PhaserTekan = false
 
 function HoldPhaser() {
     Phaser.play();
-    Phaser.addEventListener('ended', function() {
+    Phaser.onended = () => {
         Phaser.play();
-    }, false);    
+    }    
 }
 
 function TogglePhaser() {
@@ -107,9 +107,9 @@ function TogglePhaser() {
         YelpTekan = false
         PhaserTekan = true
         Phaser.play();
-        Phaser.addEventListener('ended', function() {
+        Phaser.onended = () => {
             Phaser.play();
-        }, false);  
+        }
     } else if (PhaserTekan == true){
         PhaserTekan = false;
         stopAudio(Phaser);
@@ -124,9 +124,9 @@ function StopPhaser() {
 
 function HoldHighLow() {
     HighLow.play();
-    HighLow.addEventListener('ended', function() {
+    HighLow.onended = () => {
         HighLow.play();
-    }, false);    
+    }  
 }
 
 var HighLowTekan = false
@@ -141,13 +141,9 @@ function ToggleHighLow() {
         stopAudio(Phaser)
         PhaserTekan = 0;
         HighLow.play();
-        HighLow.addEventListener('timeupdate', function(){
-            var bufferHighLow = .24
-            if(this.currentTime > this.duration - bufferHighLow){
-                this.currentTime = 0
-                this.play()
-            }
-        });
+        Wail.onended = () => {
+            Wail.play();
+        }
     } else if (HighLowTekan == true){
         HighLowTekan = false;
         stopAudio(HighLow);
