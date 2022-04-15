@@ -1,3 +1,3 @@
 Todo: <br>
 Gapless audio loop <br>
-if u can help me, dm me on discord Joshhh#5048
+NEED HELP ! ! , if u can help me, dm me on discord Joshhh#5048
